@@ -1,17 +1,51 @@
-# Environment variables
+
+# Environment variables and secrets
 .env
 .env.*
+!.env.example
 
-# Python
-__pycache__/
-*.py[cod]
-
-# Virtual environment
+# Python virtual environments
 .venv/
 venv/
+env/
 
-# macOS
-.DS_Store
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
 
-# IDE
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded and private documents
+documents/*
+!documents/.gitkeep
+
+temp_documents/*
+!temp_documents/.gitkeep
+
+# Model and ML caches
+.cache/
+cache/
+models/
+*.faiss
+*.pkl
+
+# IDE and editor files
 .vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+debug_*.py
+gemini_test.py
